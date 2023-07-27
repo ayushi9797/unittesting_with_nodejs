@@ -70,6 +70,9 @@
 
 `./test/task.spec.js`
 
+![image](https://github.com/ayushi9797/unittesting_with_nodejs/assets/112810259/eaba24df-03e0-43e4-899d-3d1f9320f30b)
+
+
 ## Set up Unit Testing
 
 ### Packages to be install
