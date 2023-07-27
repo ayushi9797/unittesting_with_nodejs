@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "248e57ec-a7a1-46a4-bc9f-eb123c865124",
+		"name": "unittesting_nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24253063",
+		"_collection_link": "https://interstellar-station-685294.postman.co/workspace/New-Team-Workspace~9b766ca7-99d7-453e-b4dd-ca26d459b9ae/collection/24253063-248e57ec-a7a1-46a4-bc9f-eb123c865124?action=share&creator=24253063&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/task/64c280b04c8afd1337a38d26",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"ayushi sonii\",\r\n    \"email\": \"ayushi11@example.com\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/task/64c280b04c8afd1337a38d26",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"ayushi chiku\",\r\n    \"email\": \"ayuchiku@example.com\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/task/64c280b04c8afd1337a38d26",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"task",
+						"64c280b04c8afd1337a38d26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/task/64c280b04c8afd1337a38d26",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/task/64c280b04c8afd1337a38d26",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"task",
+						"64c280b04c8afd1337a38d26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/task/64c27a5decdc583b7eff7ed2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/task/64c27a5decdc583b7eff7ed2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"task",
+						"64c27a5decdc583b7eff7ed2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
