@@ -64,6 +64,66 @@
 
 - `nodemon server`
 
+# Unittesting
+
+#### Folder File name
+
+`./test/task.spec.js`
+
+## Set up Unit Testing
+
+### Packages to be install
+
+`npm install chai`,
+`npm install mocha`,
+`npm install chai-http`
+
+### Set up tests
+
+Before running the tests, make sure you have set up the project and installed the required dependencies. The API project should be running and accessible via the server variable in the test files.
+
+### Test Cases
+
+The test suite covers the following test cases:
+
+1. GET /api/task
+   Test the successful retrieval of all users.
+   Test handling of an invalid URL (404).
+2. GET /api/task/:id
+   Test the successful retrieval of a specific user by ID.
+   Test handling of an invalid user ID (404).
+3. POST /api/task
+   Test the successful creation of a new user.
+   Test handling of invalid user data (404).
+4. PATCH /api/task/:id
+   Test the successful update of user details.
+   Test handling of an invalid request body (404).
+5. DELETE /api/task/:id
+   Test the successful deletion of a user.
+   Test handling of unsuccessful deletion with an invalid user ID (404).
+
+#### Running the Tests
+
+To run the tests, execute the following steps:
+
+Ensure that the User Management API is running and accessible via the server variable in the test files.
+
+Execute the test files using a test runner like Mocha and chai.
+
+The test runner will execute the test cases defined in the test files and display the results.
+
+## To check the testcases
+
+`npm test`
+
+#### Process using port 8080
+
+` netstat -ano | findstr :8080`
+
+#### Kill the process using the PID (replace '18308' with the actual PID)
+
+`- taskkill /PID 18308 /F`
+
 #### UserModel
 
 ```
@@ -75,7 +135,7 @@
 
 ```
 
-### API and Routes
+## API and Routes
 
 # All routes
 
@@ -88,6 +148,119 @@
 | PUT       | /api/task/:id | This endpoint should allow to update the details of a specific users identified by its ID. | 200         |
 | GET BY ID | /api/task/:id | This endpoint should allow to users to get user by specific id.                            | 200         |
 
+## APIS
 
+### POST API
 
-## 
+`http://localhost:8080/api/task`
+
+#### Schema
+
+```
+{
+    "name": "ayushi sonii",
+    "email": "ayushi11@example.com",
+    "password": "12345"
+}
+```
+
+#### Response message
+
+```
+{
+    "message": ":new user created "
+}
+```
+
+### GET API
+
+`http://localhost:8080/api/task`
+
+#### Response Message
+
+```
+{
+    "message": "details of all the users",
+    "data": [
+        {
+            "_id": "64c27a5decdc583b7eff7ecf",
+            "name": "ayushi",
+            "email": "ayu111@gmail.com",
+            "password": "1234",
+            "__v": 0
+        },
+        {
+            "_id": "64c27a5decdc583b7eff7ed2",
+            "name": "chiku",
+            "email": "chiku12@example.com",
+            "password": "12345",
+            "__v": 0
+        },
+        {
+            "_id": "64c27eab4c8afd1337a38d1f",
+            "name": "prathvi soni",
+            "email": "prathvi12@gmail.com",
+            "password": "1234",
+            "__v": 0
+        }
+    ]
+}
+```
+
+### GET BY ID API
+
+`http://localhost:8080/api/task/64c280b04c8afd1337a38d26`
+
+#### Response message
+
+```
+{
+    "message": ":get user by id",
+    "data": {
+        "_id": "64c27a5decdc583b7eff7ed2",
+        "name": "chiku",
+        "email": "chiku12@example.com",
+        "password": "12345",
+        "__v": 0
+    }
+}
+```
+
+### PATCH API
+
+`http://localhost:8080/api/task/64c280b04c8afd1337a38d26`
+
+#### Response message
+
+```
+{
+    "message": ":users data updated ",
+    "data": {
+        "_id": "64c280b04c8afd1337a38d26",
+        "name": "ayushi sonii",
+        "email": "ayushi11@example.com",
+        "password": "12345",
+        "__v": 0
+    }
+}
+```
+
+### DELETE API
+
+`http://localhost:8080/api/task/64c280b04c8afd1337a38d26`
+
+#### Response message
+
+```
+
+{
+    "message": ":user data deleted ",
+    "data": {
+        "_id": "64c280b04c8afd1337a38d26",
+        "name": "ayushi",
+        "email": "ayu@example.com",
+        "password": "12345",
+        "__v": 0
+    }
+}
+```
