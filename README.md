@@ -38,6 +38,9 @@
 
 ## Database Mongodb collection
 
+![image](https://github.com/ayushi9797/unittesting_with_nodejs/assets/112810259/3444a81c-af76-46fd-b5bf-eb1f77e98ce5)
+
+
 # REQUIREMENTS
 
 - User can register
