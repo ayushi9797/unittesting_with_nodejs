@@ -1,4 +1,4 @@
-# NODE JS EXPRESS WITH MONGODB APPLYING UNITTESTCASES AND SWAGGER API DOCUMENTATION
+## NODE JS EXPRESS WITH MONGODB APPLYING UNITTESTCASES AND SWAGGER API DOCUMENTATION
 
 ## NODE JS
 
@@ -34,12 +34,11 @@
 
 ## Postman collection
 
-- `./postman_collection/unittesting_nodejs.postman,json`
+- `./postman_collection/unittesting_nodejs.postman.json`
 
 ## Database Mongodb collection
 
 ![image](https://github.com/ayushi9797/unittesting_with_nodejs/assets/112810259/3444a81c-af76-46fd-b5bf-eb1f77e98ce5)
-
 
 # REQUIREMENTS
 
@@ -48,3 +47,47 @@
 - Retrieves a user with specific id
 - Updates an existing user
 - deletes an existing user
+
+#### Creating Server
+
+- It is not an inbuilt module of node, so we have to install it using `npm`
+- Create a node project by `npm init -y` .
+- Create a file named `index.js` .
+- Initialise a node project and install `nodemon`
+- Install `express`,`dotenv`,`mongoose`........
+
+#### Running node.js locally
+
+- install all dependencies `npm install`
+
+#### To run mongodb server with Express Node
+
+- `nodemon server`
+
+#### UserModel
+
+```
+{
+    name: String,
+    email: String,
+    password: String
+}
+
+```
+
+### API and Routes
+
+# All routes
+
+| METHOD    | ENDPOINT      | DESCRIPTION                                                                                | STATUS CODE |
+| --------- | ------------- | ------------------------------------------------------------------------------------------ | ----------- |
+| POST      | /api/task     | This endpoint should allow users to register and create.                                   | 200         |
+|           |
+| GET       | /api/task     | This endpoint should return a list of all available users.                                 | 200         |
+| DELETE    | /api/task/:id | This endpoint should allow to users to delete details to the system.                       | 200         |
+| PUT       | /api/task/:id | This endpoint should allow to update the details of a specific users identified by its ID. | 200         |
+| GET BY ID | /api/task/:id | This endpoint should allow to users to get user by specific id.                            | 200         |
+
+
+
+## 
