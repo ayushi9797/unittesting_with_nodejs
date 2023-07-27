@@ -30,7 +30,8 @@
 
 `http://localhost:8080/api-docs/`
 
-![image](https://github.com/ayushi9797/unittesting_with_nodejs/assets/112810259/acfd9633-d1f7-4b58-bc48-41c875a7c81b)
+![image](https://github.com/ayushi9797/unittesting_with_nodejs/assets/112810259/b448705b-bbc1-4cd9-ac7f-df377d388def)
+
 
 ## Setting the swagger API Documentation
 
