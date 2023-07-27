@@ -32,6 +32,13 @@
 
 ![image](https://github.com/ayushi9797/unittesting_with_nodejs/assets/112810259/acfd9633-d1f7-4b58-bc48-41c875a7c81b)
 
+## Setting the swagger API Documentation
+
+#### Package need to install
+
+- `npm i swagger-jsdoc`,
+- `npm i swagger-ui-express`
+
 ## Postman collection
 
 - `./postman_collection/unittesting_nodejs.postman.json`
@@ -72,14 +79,13 @@
 
 ![image](https://github.com/ayushi9797/unittesting_with_nodejs/assets/112810259/eaba24df-03e0-43e4-899d-3d1f9320f30b)
 
-
 ## Set up Unit Testing
 
 ### Packages to be install
 
-`npm install chai`,
-`npm install mocha`,
-`npm install chai-http`
+- `npm install chai`,
+- `npm install mocha`,
+- `npm install chai-http`
 
 ### Set up tests
 
