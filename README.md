@@ -32,6 +32,16 @@
 
 ![image](https://github.com/ayushi9797/unittesting_with_nodejs/assets/112810259/acfd9633-d1f7-4b58-bc48-41c875a7c81b)
 
+## Postman collection
 
+- `./postman_collection/unittesting_nodejs.postman,json`
 
+## Database Mongodb collection
 
+# REQUIREMENTS
+
+- User can register
+- Retrieves a list of all user
+- Retrieves a user with specific id
+- Updates an existing user
+- deletes an existing user
