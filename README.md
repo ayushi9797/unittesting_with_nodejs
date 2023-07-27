@@ -30,5 +30,8 @@
 
 `http://localhost:8080/api-docs/`
 
+![image](https://github.com/ayushi9797/unittesting_with_nodejs/assets/112810259/acfd9633-d1f7-4b58-bc48-41c875a7c81b)
+
+
 
 
